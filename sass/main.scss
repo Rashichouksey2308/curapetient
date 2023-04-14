@@ -1,0 +1,71 @@
+@import './variables/var';
+@import './mixins/mixin';
+@import './fontFamily/font';
+@import './scssfiles/banner/banner-section';
+@import './scssfiles/organization/organization';
+@import './scssfiles/enrollment/enrollment';
+@import './scssfiles/enrollment/searchfilters/search-filter';
+@import './scssfiles/enrollment/org-header/org-header';
+@import './scssfiles/nav/header';
+@import './scssfiles/member/members';
+@import './scssfiles/event/event';
+
+
+// variable
+// nesting
+// mixin
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $author;
+
+}
+
+h1,
+p,
+h3,
+h5 {
+	margin: 0;
+	padding: 0;
+}
+
+.arrow {
+	box-sizing: border-box;
+	width: 12px;
+	height: 12px;
+	border-style: solid;
+	border-color: #4c4c4c;
+	border-width: 0px 2.5px 2.5px 0px;
+	transform: rotate(45deg);
+	margin-left: 32px;
+}
+
+img {
+	width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	padding: 0 50px;
+	margin: 0 auto;
+	max-width: 2000px;
+}
+
+.logo {
+	width: 192px;
+}
+
+// event
+

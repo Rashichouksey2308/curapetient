@@ -1,0 +1,215 @@
+.organization {
+
+	.bottom-content {
+		// margin-bottom: 28px;
+		display: flex;
+		align-items: center;
+		padding: 20px 20px 20px 21.2px;
+		@include border-radius(14px);
+		box-shadow: 0 3px 20px 0 rgb(0 0 0 / 8%);
+
+		.District {
+			width: 25%;
+			margin-right: 26px;
+
+			h3 {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 1.4;
+				letter-spacing: 0.1px;
+				color: $heading-txt-color;
+				padding-bottom: 13px;
+			}
+
+			.District-cover {
+				display: flex;
+				background-color: #e6f3ee;
+				padding: 12px 17.4px 12px 13px;
+				@include border-radius(5px);
+				cursor: pointer;
+				justify-content: space-between;
+
+				h3 {
+					font-size: 20px;
+					font-weight: 500;
+					line-height: normal;
+					letter-spacing: normal;
+					color: $heading2-txt-color;
+					padding-bottom: 0;
+				}
+
+				.arrow {
+					box-sizing: border-box;
+					width: 12px;
+					height: 12px;
+					border-style: solid;
+					border-color: black;
+					border-width: 0px 2.5px 2.5px 0px;
+					transform: rotate(45deg);
+					transition: border-width 150ms ease-in-out;
+					margin-left: 32px;
+				}
+			}
+
+			.para-1 {
+				padding-top: 6.9px;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 1.38;
+				color: $heading2-txt-color;
+			}
+
+			.para-2 {
+				padding-top: 14.2px;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 25px;
+				color: $heading-txt-color;
+			}
+		}
+
+		.right-content {
+			display: flex;
+			width: 100%;
+
+			.dropdown-container {
+				padding: 20px 17.3px 19px 23px;
+				@include border-radius(14px);
+				border: solid 1px $border-box;
+				width: 25%;
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+				&:hover{
+					background-color: $notification-bg;
+					&::after {
+						border-width: 2.5px 0px 0px 2.5px;
+					}
+				}
+				
+
+				&:not(:last-child) {
+					margin-right: 26px;
+				}
+
+				&::after {
+					content: '';
+					display: block;
+					box-sizing: border-box;
+					width: 13.2px;
+					height: 13.2px;
+					border-style: solid;
+					border-color: $heading2-txt-color;
+					border-width: 0px 2.5px 2.5px 0px;
+					transform: rotate(45deg);
+					// transition: border-width 150ms ease-in-out;
+					position: absolute;
+					right: 20px;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+					cursor: pointer;
+				}
+
+				&.Schools-Enrolled {
+					img {
+						width: 36px;
+						position: absolute;
+						left: 24px;
+						bottom: 26px;
+					}
+				}
+
+				&.events {
+					img {
+						width: 32.2px;
+						position: absolute;
+						left: 25px;
+						bottom: 25px;
+					}
+				}
+
+				&.Insurance-Rates {
+					img {
+						width: 36px;
+						position: absolute;
+						left: 25px;
+						bottom: 25px;
+					}
+				}
+
+				&.COVID-19-Positive {
+					img {
+						width: 36px;
+						position: absolute;
+						left: 25px;
+						bottom: 25px;
+					}
+				}
+
+				.dropdown-container-content {
+					flex: 1;
+					margin: 0 14px 0 17.3px;
+					position: relative;
+
+					h5 {
+						font-size: 32px;
+						font-weight: 500;
+						margin-bottom: 14.5px;
+
+						&.dropdown-content-events {
+							margin: 12.4px 0 0px 0;
+						}
+
+						&.dropdown-content-Rates {
+							margin: 10px 0 6px 0;
+							font-weight: 600;
+						}
+					}
+
+					p {
+						font-size: 16px;
+						color: $heading-txt-color;
+					}
+
+				}
+
+				.box-size {
+					width: 82px;
+					height: 82px;
+					@include border-radius(7px);
+					position: relative;
+				}
+
+				.school-bg {
+
+					background-color: $bg-color1;
+				}
+
+				.Insurance-bg {
+					background-color: $bg-color2;
+				}
+
+				.COVID-bg {
+					background-color: $bg-color3;
+				}
+
+			}
+
+			.events-bg {
+				background-color: $bg-color4;
+			}
+
+			.active {
+
+				background-color: $notification-bg;
+
+				&::after {
+					border-width: 2.5px 0px 0px 2.5px;
+				}
+			}
+		}
+	}
+}

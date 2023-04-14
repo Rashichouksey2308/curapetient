@@ -1,0 +1,70 @@
+.header-2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 37px 0;
+
+	h3 {
+		font-size: 22px;
+		font-weight: 500;
+		color: $heading3-txt-color;
+	}
+	.selectdiv {
+		position: relative;
+		/*Don't really need this just for demo styling*/
+		float: left;
+	}
+
+	.selectdiv:after {
+		content: '\f078';
+		font: normal normal normal 14px/1 FontAwesome;
+		right: 11px;
+		top: 10px;
+		height: 34px;
+		padding: 15px 0px 0px 8px;
+		color: #4c4c4c;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	select::-ms-expand {
+		display: none;
+	}
+
+	.selectdiv select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		font-family: 'author';
+		display: block;
+		float: right;
+		line-height: 1.75;
+		color: #333;
+		background-color: #ffffff;
+		background-image: none;
+
+		-ms-word-break: normal;
+		word-break: normal;
+		padding: 12px 30px 12px 17px;
+		@include border-radius(5px);
+		border: solid 1px $border-2-bold;
+		background-color: $main-bg-color;
+		margin-left: 15px;
+		font-size: 20px;
+		color: $heading2-txt-color;
+		max-width: 300px;
+		font-weight: normal;
+
+	}
+
+	.test-option {
+		width: 300px;
+		cursor: pointer;
+	}
+
+	.date-option {
+		width: 170px;
+		cursor: pointer;
+	}
+}

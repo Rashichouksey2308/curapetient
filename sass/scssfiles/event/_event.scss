@@ -1,0 +1,361 @@
+.bottom-content {
+   margin-top: 28px;
+}
+.event {
+    .event-content {
+        border-radius: 10px;
+        border: solid 2px #e6e6e6;
+        background-color: #fff;
+        margin-top: 25px;
+        margin-bottom: 14px;
+        padding: 31px;
+
+        .enrollment-status-btns {
+            margin-right: 16px;
+            display: flex;
+        }
+
+        .Placeholder-content {
+            width: 381px;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #4c4c4c;
+            padding-top: 10px;
+
+        }
+        form.example button {
+	
+			margin-right: 16.3px;
+			
+		}
+        .list-main {
+			
+			margin-right: 15px;
+
+        }
+        .map {
+            border-right: 0;
+        }
+
+        .calender {
+            border: solid 1px #e2e2e2;
+            background-color: #fff;
+            padding: 16px 20px;
+            border-right: 0;
+            cursor: pointer;
+            border-left: none;
+
+            &:hover {
+                background-color: #7cb150;
+            }
+
+            img {
+                width: 20px;
+            }
+
+        }
+
+
+        .header-2 {
+            padding: 41px 0 0 0;
+
+        }
+
+        .Show-Result {
+            width: 145px;
+            padding: 19px 0;
+            border: solid 1px #e2e2e2;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: #fff;
+            color: #4c4c4c;
+            font-family: "author";
+            margin-left: 16px;
+            height: 60px;
+            cursor: pointer;
+            font-weight: normal;
+
+            &:hover {
+                background-color: #7cb150;
+                color: #fff;
+                font-weight: 500;
+                border: none;
+                font-size: 20px;
+            }
+        }
+
+        .cardHeader {
+            display: flex;
+
+            .Fitter-card {
+                width: 55%;
+                padding: 0px 17px 0px 0px;
+                height: 926px;
+                overflow-y: auto;
+                cursor: pointer;
+                margin: 29px 0px 0px 0px;
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+
+                /* Track */
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px #cccccc;
+                    border-radius: 10px;
+                    margin-top: 14px;
+
+                }
+
+                /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: #cccccc;
+                    border-radius: 5px;
+                }
+
+                /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: rgb(199, 196, 196);
+                }
+
+                .card {
+                    padding: 22px 15px 25px 24px;
+                    border-radius: 10px;
+                    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
+                    border: solid 1px #e2e2e4;
+                    background-color: #fff;
+                    width: 100%;
+                    margin: 11.5px 0;
+
+                    .card-heading {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .left {
+                            display: flex;
+                            flex: 1;
+                            align-items: center;
+
+                            h3 {
+                                font-size: 24px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #0e1817;
+                            }
+
+                            .blue-calender {
+                                background: transparent;
+                                border: none;
+                                margin: 0 0px 0 10px;
+                                padding: 0;
+                                cursor: pointer;
+
+
+                                img {
+                                    width: 21.9px;
+                                }
+                            }
+
+                            .completed-btn {
+                                padding: 8px 23px;
+                                @include border-radius(16px);
+                                background-color: $notification-bg;
+                                border: none;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: $btn-bg-active;
+                                cursor: pointer;
+                                font-family: 'author';
+                                margin: 0px 0 0px 17px;
+                            }
+
+                            .ongoing-btn {
+                                padding: 7px 23px;
+                                @include border-radius(16px);
+                                font-family: 'author';
+                                background-color: #f7f3e5;
+                                border: none;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #efb023;
+                                cursor: pointer;
+                                margin: 0px 0 0px 10px;
+                            }
+
+                            .Upcoming-btn {
+                                padding: 7px 25px;
+                                @include border-radius(16px);
+                                font-family: 'author';
+                                background-color: #e5edf7;
+                                border: none;
+                                font-size: 16px;
+                                font-weight: 500;
+                                color: #1969cc;
+                                cursor: pointer;
+                                margin: 0px 0 0px 17px;
+                                font-family: 'author';
+                            }
+                        }
+
+                        .edit-btn {
+                            width: 32px;
+                            height: 32px;
+                            background-color: $notification-bg;
+                            border: none;
+                            @include border-radius(50px);
+                            cursor: pointer;
+
+
+                            i {
+                                &.fa {
+                                    color: #7cb150;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .vaccination-content {
+                        height: auto;
+                        min-height: 44%;
+
+                        .Vaccination {
+                            .vaccination-details {
+                                display: flex;
+
+
+                            }
+
+                            .inner-details {
+                                display: flex;
+                                padding: 31px 0 4px 0; 
+                                align-items: center;
+                                width: 50%;
+
+                                &.right {
+                                    margin-left: 17%;
+                                }
+
+                                img {
+                                    width: auto;
+                                    height: 25.4px;
+                                    margin: 0 13.2px 0 0;
+                                }
+
+                                .main-text {
+                                    font-size: 20px;
+                                    font-weight: normal;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #4c4c4c;
+                                    padding-top: 0;
+                                }
+
+                                .sub-text {
+                                    font-size: 22px;
+                                    font-weight: 500;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #0e1817;
+                                    padding-top: 5px;
+                                }
+
+
+                                p {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: normal;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color: #0e1817;
+                                }
+                            }
+
+
+
+                        }
+                    }
+
+
+                }
+
+            }
+
+            .mapimg {
+
+                padding-top: 29.5px;
+                margin-left: 2px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    vertical-align: middle;
+                }
+
+                .addEvent {
+                    width: 87px;
+                    height: 87px;
+                    background: #000;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 25%;
+                    right: -31px;
+
+                    .Add-Event-box {
+                        width: 103px;
+                        height: 41px;
+                        background: #000;
+                        border-radius: 25px 0px 0px 25px;
+                        position: absolute;
+                        top: 28%;
+                        right: 72px;
+                        font-family: 'author';
+                        border: none;
+
+                        .Add-Event-text {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #fff;
+                            text-align: center;
+                            padding: 11px 0;
+                        }
+
+                    }
+
+                    .add-btn {
+                        background: transparent;
+                        border: none;
+
+                        img {
+                            width: 34.8px;
+                            position: absolute;
+                            top: 28%;
+                            left: 28%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+}

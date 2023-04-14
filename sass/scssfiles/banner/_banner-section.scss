@@ -1,0 +1,94 @@
+.banner-section {
+	position: relative;
+
+	.left-contet {
+		display: flex;
+		align-items: center;
+		padding-top: 37px;
+
+		.family-img {
+			width: 250px;
+			padding: 0px 13px 0 0px;
+		}
+
+		.welcome-content {
+			h1 {
+				font-size: 52px;
+				font-weight: 600;
+				// padding: 10px 0 0 0;
+			}
+
+			p {
+				font-size: 22px;
+				font-weight: 500;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #101817;
+				padding: 10px 0 25px 0;
+			}
+		}
+	}
+
+
+	.right-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 40px 0px 20px;
+		background: $notification-bg;
+		position: absolute;
+		top: 61px;
+		right: 0;
+		@include border-radius(10px);
+
+		button.feature-img {
+			background: transparent;
+			border: none;
+			cursor: pointer;
+
+			&.feature-img {
+				width: 38px;
+			}
+		}
+
+		.Vaccinations-content {
+			p {
+				font-size: 22px;
+				font-weight: 500;
+				padding: 0 20px;
+				margin: 13px 0 10px 0;
+			}
+
+			a {
+				font-weight: 500;
+				color: $alert-icon;
+				padding-left: 22px;
+				text-decoration: underline;
+				display: block;
+				margin-bottom: 13px;
+			}
+		}
+
+		.ellipse {
+			width: 36px inherit;
+			width: 36px;
+			height: 36px;
+			background: $alert-icon;
+			border: none;
+			@include border-radius(50px);
+			position: relative;
+			cursor: pointer;
+
+			img {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				width: 25.9px;
+			}
+		}
+	}
+
+}

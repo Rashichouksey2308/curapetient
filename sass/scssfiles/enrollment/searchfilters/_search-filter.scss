@@ -1,0 +1,148 @@
+.top-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	h3 {
+		font-size: 30px;
+		font-weight: 600;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: $heading3-txt-color;
+	}
+
+	.enrollment-status {
+		display: flex;
+		align-items: center;
+
+		.enrollment-status-btns {
+			margin-right: 77px;
+			display: flex;
+
+			.status-btn {
+			    font-family: 'author';
+				background-color: $main-bg-color;
+				border: solid 1px $border-bold;
+				font-weight: normal;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: $heading2-txt-color;
+				cursor: pointer;
+				border-left: none;
+				font-size: 16px;
+				width: 112px;
+				text-align: center;
+				padding: 18.5px 0px;
+				&:hover{
+					background-color: $alert-icon;
+					color: $main-bg-color;
+					font-weight: 500;
+					
+				}
+
+				&.active {
+					background-color: $alert-icon;
+					color: $main-bg-color;
+					font-weight: 500;
+					
+				}
+				&:first-child {
+					@include border-radius(5px 0 0px 5px);
+					width: 61px;
+					border-left: solid 1px #e3e3e3;
+					
+				}
+
+				&:last-child {
+					@include border-radius(0px 5px 5px 0px);
+				}
+			}
+		}
+
+		form.example input[type=text] {
+			font-family: 'author';
+			font-size: 20px;
+			font-weight: normal;
+			float: left;
+			width: 500px;
+			background: $main-bg-2-color;
+			@include border-radius(5px 0px 0px 5px);
+			border: solid 1px $border-2-bold;
+			background-color: $main-bg-color;
+			padding: 17px 15.4px 17px 17px;
+			// padding: 17px 22px 18px 17px;
+			cursor: pointer;
+		}
+
+		form.example button {
+			cursor: pointer;
+			float: left;
+			padding: 10px;
+			background: $alert-icon;
+			color: $main-bg-color;
+			font-size: 17px;
+			border-left: none;
+			cursor: pointer;
+			padding: 18px 22px;
+			@include border-radius(0px 5px 5px 0px);
+			border: none;
+			margin-right: 15px;
+			cursor: pointer;
+		}
+
+		form.example::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.list-main {
+			display: flex;
+			margin-right: 14px;
+
+			.map {
+				@include border-radius(5px 0px 0px 5px);
+				border: solid 1px $border-2-bold;
+				background-color: $main-bg-color;
+				padding: 16px 20px ;
+				cursor: pointer;
+				&:hover{
+					background-color: #7cb150;
+				}
+				img {
+					width: 15.8px;
+				}
+			}
+			.list {
+				@include border-radius(0px 5px 5px 0px);
+				// background-color: $alert-icon;
+				border: solid 1px $border-2-bold;
+				padding: 15px 20px 15px 20px;
+				cursor: pointer;
+				border-left: 0;
+				border: none;
+				&.active{
+					background-color: #7cb150;
+				}
+				img {
+					width: 20.7px;
+				}
+			}
+		}
+		.filter {
+			@include border-radius(5px);
+			border: solid 1px $border-2-bold;
+			background-color: $main-bg-color;
+			padding: 14px 15px 14px 15px;
+			cursor: pointer;
+			img {
+				width: 24px;
+			}
+		}
+	}
+}
